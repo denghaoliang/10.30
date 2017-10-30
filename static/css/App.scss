@@ -1,0 +1,124 @@
+$sr:25;
+*{margin: 0;padding: 0;}
+.router-link-active{
+    color: red !important;
+}
+a{
+    text-decoration: none;
+    }
+html{
+    width: 100%;
+    height: 100%;
+    body{
+        @extend html;
+        #app{
+        @extend html;
+        header{
+//          position: fixed;
+            width: 100%;
+            height: 45/$sr+rem;
+            background:#ff3644;
+            display: flex;
+            justify-content: space-between;
+            box-sizing: border-box;
+            padding: 0 15/$sr+rem;
+            position: fixed;
+            top: 0;
+            z-index: 10;
+            
+            span{
+                float: left;
+                display:block;
+                width: 50/$sr+rem;
+                height: 45/$sr+rem;
+                color: #fff;
+            }
+            .iconfont{
+                font-size: 25/$sr+rem;
+                line-height: 45/$sr+rem;
+                text-align: center;
+            }
+        }
+        nav{
+            z-index: 10;
+            position: fixed;
+            top: 45/$sr+rem;
+            box-sizing: border-box;
+            padding: 0 15/$sr+rem;
+            width: 100%;
+            height: 30/$sr+rem;
+            background: #fff;
+            border-bottom: solid 1px #999999;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            &>div:nth-child(1){
+              overflow: hidden; 
+              width: 290/$sr+rem; 
+              height: 100%;
+              line-height: 100%;
+              position: relative;
+              .fu{
+                 overflow-x: hidden;
+                 white-space: nowrap;
+//                overflow-x: scroll;
+                  overflow-y: auto;
+//                width: 255/$sr+rem;
+                  position: absolute;
+                  height: 100%;
+                  z-index: 5;
+              }
+            }
+            &>div:nth-child(2){
+                width:50/$sr+rem;
+                height: 100%;
+                padding: 5/$sr+rem 0;
+                box-sizing: border-box;
+                &>p{
+                    height: 100%;
+                    width: 100%;
+                    border-left:#999 solid 1/$sr+rem ;                    
+                    }
+                img{
+                    display: block;
+                    width: 25/$sr+rem;
+                    height: 100%;
+                    margin: 0 auto;
+                }
+            }
+            a{    
+                display: inline-block;
+                  font-size: 17/$sr+rem;
+                  color:#999;
+                  margin-right: 15/$sr+rem;
+            }
+        }
+                 
+     }
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    }
+}

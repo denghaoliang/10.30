@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+.router-link-active {
+  color: red !important; }
+
+a {
+  text-decoration: none; }
+
+html, html body, html body #app {
+  width: 100%;
+  height: 100%; }
+  html body #app header {
+    width: 100%;
+    height: 1.8rem;
+    background: #ff3644;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 0 0.6rem;
+    position: fixed;
+    top: 0;
+    z-index: 10; }
+    html body #app header span {
+      float: left;
+      display: block;
+      width: 2rem;
+      height: 1.8rem;
+      color: #fff; }
+    html body #app header .iconfont {
+      font-size: 1rem;
+      line-height: 1.8rem;
+      text-align: center; }
+  html body #app nav {
+    z-index: 10;
+    position: fixed;
+    top: 1.8rem;
+    box-sizing: border-box;
+    padding: 0 0.6rem;
+    width: 100%;
+    height: 1.2rem;
+    background: #fff;
+    border-bottom: solid 1px #999999;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+    html body #app nav > div:nth-child(1), html body #app body #app nav > div:nth-child(1) {
+      overflow: hidden;
+      width: 11.6rem;
+      height: 100%;
+      line-height: 100%;
+      position: relative; }
+      html body #app nav > div:nth-child(1) .fu {
+        overflow-x: hidden;
+        white-space: nowrap;
+        overflow-y: auto;
+        position: absolute;
+        height: 100%;
+        z-index: 5; }
+    html body #app nav > div:nth-child(2), html body #app body #app nav > div:nth-child(2) {
+      width: 2rem;
+      height: 100%;
+      padding: 0.2rem 0;
+      box-sizing: border-box; }
+      html body #app nav > div:nth-child(2) > p {
+        height: 100%;
+        width: 100%;
+        border-left: #999 solid 0.04rem; }
+      html body #app nav > div:nth-child(2) img {
+        display: block;
+        width: 1rem;
+        height: 100%;
+        margin: 0 auto; }
+    html body #app nav a {
+      display: inline-block;
+      font-size: 0.68rem;
+      color: #999;
+      margin-right: 0.6rem; }
+
+/*# sourceMappingURL=App.css.map */
